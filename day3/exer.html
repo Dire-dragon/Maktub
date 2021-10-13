@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录界面</title>
+    <style>
+      input {
+        border-radius: 4px;
+      }
+      .login-title {
+        margin-bottom: 10px;
+      }
+      .login-password {
+        margin-right: 16px;
+      }
+      .login-btn {
+        margin-top: 20px;
+      }
+      .input-error {
+        border-color: #ff0000;
+      }
+      .info-error {
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-title">
+        <span class="login-title-content">用户登录</span>
+      </div>
+      <div class="login-content">
+        <div class="login-content-user">
+          <span class="login-user">用户名：</span>
+          <input type="text" />
+          <span class="login-user-info info-error"></span>
+        </div>
+        <div class="login-content-password">
+          <span class="login-password">密码：</span>
+          <input type="password" />
+          <span class="login-password-info info-error"></span>
+        </div>
+      </div>
+      <div class="login-btn">
+        <button type="submit">提交</button>
+      </div>
+    </div>
+  </body>
+  <script src="./js/exer.js"></script>
+</html>
