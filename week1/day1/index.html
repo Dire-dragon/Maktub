@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>1</title>
+    <style>
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .form-info .filter-lable {
+        padding-right: 12px;
+      }
+      .form-info .filter-input {
+        line-height: 30px;
+        height: 30px;
+        border-radius: 4px;
+        padding-left: 5px;
+        margin-right: 10px;
+        border-color: #d9d9d9;
+      }
+      button {
+        height: 34px;
+        border-radius: 4px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border: none;
+      }
+      .form-info .filter-search-btn {
+        background: #ffeb3b;
+      }
+      .form-info .filter-form {
+        display: flex;
+      }
+      /* .filter-btn{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items:flex-start;
+       } */
+      .table-info table {
+        border: 1px solid #000;
+        border-spacing: 0px;
+        width: 100%;
+      }
+      .table-info thead {
+        background: #ffeb3b;
+      }
+      .table-info th,
+      td {
+        padding: 10px;
+        border: 1px solid #000;
+        text-align: center;
+      }
+      .pagination {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .pagination .pagination-btn {
+        background: #ffeb3b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-info">
+      <div class="title">数据筛选</div>
+      <div class="filter-form">
+        <div class="filter-item">
+          <span class="filter-lable">机构：</span>
+          <input class="filter-input" type="text" />
+        </div>
+        <div class="filter-item">
+          <span>操作人：</span>
+          <input class="filter-input" type="text" />
+        </div>
+        <div class="filter-item filter-btn">
+          <button type="submit" class="btn filter-search-btn">搜索</button>
+          <button type="reset" class="btn">重置</button>
+        </div>
+      </div>
+    </div>
+    <div class="table-info">
+      <div class="title">数据表格</div>
+      <table>
+        <thead>
+          <tr>
+            <th>序号</th>
+            <th>编码</th>
+            <th>机构</th>
+            <th>操作人</th>
+            <th>操作时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>P001</td>
+            <td>西南配送中心</td>
+            <td>机器人001</td>
+            <td>2020/09/08 16:32</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>P002</td>
+            <td>西南配送中心</td>
+            <td>机器人002</td>
+            <td>2020/09/08 16:32</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>P004</td>
+            <td>西南配送中心</td>
+            <td>机器人003</td>
+            <td>2020/09/08 16:32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <button class="pagination-btn">1</button>
+      <button>2</button>
+    </div>
+  </body>
+</html>
