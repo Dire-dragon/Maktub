@@ -11,7 +11,7 @@ const InitInputValue = (e) => {
 };
 
 const getContent = (e) => {
-  console.log(`Page:${e.target.innerHTML}`);
+  console.log(`Page:${e.target.textContent}`);
 };
 
 const searchBtn = document.querySelector(' .filter-search-btn');
