@@ -1,13 +1,38 @@
+const getInputValue = (e) => {
+  const input = document.querySelectorAll('.filter-input');
+  console.log(`机构：${input[0].value}`);
+  console.log(`操作人：${input[1].value}`);
+};
+
+const InitInputValue = (e) => {
+  const input = document.querySelectorAll('.filter-input');
+  input[0].value = '';
+  input[1].value = '';
+};
+
+const getContent = (e) => {
+  console.log(`Page:${e.target.innerHTML}`);
+};
+
+const searchBtn = document.querySelector(' .filter-search-btn');
+const resetBtn = document.querySelector(' .filter-reset-btn');
+const PageBtn = document.querySelector('.pagination');
+
+searchBtn.addEventListener('click', getInputValue);
+resetBtn.addEventListener('click', InitInputValue);
+PageBtn.addEventListener('click', getContent);
+
+//--------------------------------
 const createArray = (n) => {
   if (typeof n !== 'number' || n < 0) {
     console.log('请输入正确的值！');
     return;
   }
   const arr = [];
-  for(let i = 0; i < n; i++){
-    arr.push("");
+  for (let i = 0; i < n; i++) {
+    arr.push('');
   }
-  const newArr = arr.map((item,index) =>{
+  const newArr = arr.map((item, index) => {
     let i = index + 1;
     return {
       id: i,
@@ -17,7 +42,7 @@ const createArray = (n) => {
       operator: `操作人${i}`,
       operateTime: '2020/09/08 16:32',
     };
-  })
+  });
   // for (let i = 1; i <= n; i++) {
   //   const item = {
   //     id: i,
